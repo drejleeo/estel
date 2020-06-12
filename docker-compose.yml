@@ -1,0 +1,38 @@
+version: '3'
+services:
+    db:
+        build: docker/dev/Postgres
+        ports:
+          - "5432:5432"
+        environment:
+            - POSTGRES_USER=estel
+            - POSTGRES_PASS=estel
+            - POSTGRES_DBNAME=estel_db
+            - ALLOW_IP_RANGE=0.0.0.0/0
+        container_name: postgres
+
+    backend:
+        build:
+          context: ./
+          dockerfile: docker/dev/Python/Dockerfile
+        command: sh /estel/docker/dev/Python/run_django.sh
+        volumes:
+            - /Users/aleonte/Documents/git/estel:/estel
+        ports:
+            - "8080:8080"
+        depends_on:
+          - db
+        container_name: estel_backend
+
+    frontend:
+        build:
+            context: ./
+            dockerfile: docker/dev/Angular/Dockerfile
+        command: sh /estel/docker/dev/Angular/run_angular.sh
+        volumes:
+            - /Users/aleonte/Documents/git/estel:/estel
+        ports:
+            - "4200:4200"
+        depends_on:
+            - backend
+        container_name: estel_frontend

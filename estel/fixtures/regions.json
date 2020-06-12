@@ -1,0 +1,66 @@
+[
+{
+  "model": "country.region",
+  "pk": 1,
+  "fields": {
+    "name": "Florida",
+    "country": 1
+  }
+},
+{
+  "model": "country.region",
+  "pk": 2,
+  "fields": {
+    "name": "Minessotta",
+    "country": 1
+  }
+},
+{
+  "model": "country.region",
+  "pk": 3,
+  "fields": {
+    "name": "Sydney",
+    "country": 14
+  }
+},
+{
+  "model": "country.region",
+  "pk": 4,
+  "fields": {
+    "name": "St. Petersburg",
+    "country": 10
+  }
+},
+{
+  "model": "country.region",
+  "pk": 5,
+  "fields": {
+    "name": "Tokyo",
+    "country": 11
+  }
+},
+{
+  "model": "country.region",
+  "pk": 6,
+  "fields": {
+    "name": "California",
+    "country": 1
+  }
+},
+{
+  "model": "country.region",
+  "pk": 7,
+  "fields": {
+    "name": "Paris",
+    "country": 5
+  }
+},
+{
+  "model": "country.region",
+  "pk": 8,
+  "fields": {
+    "name": "Monte Carlo",
+    "country": 15
+  }
+}
+]

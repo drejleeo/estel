@@ -1,0 +1,65 @@
+[
+{
+  "model": "company.company",
+  "pk": 1,
+  "fields": {
+    "name": "Charging Point",
+    "logo": "company_logos/CPS-Logo_7tIOer8.jpg",
+    "about": "ChargePoint is the world's largest network of electric vehicle (EV) charging stations in the US, Europe, Australia. Join the EV revolution for a greener tomorrow!"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 2,
+  "fields": {
+    "name": "Tesla",
+    "logo": "company_logos/7b80b3276866f2258b570aa6c07e54ca_YHbdI95.jpg",
+    "about": "Tesla, Inc. (formerly Tesla Motors, Inc.) is an American automotive and energy company based in Palo Alto, California. The company specializes in electric car manufacturing and, through its SolarCity subsidiary, solar panel manufacturing."
+  }
+},
+{
+  "model": "company.company",
+  "pk": 3,
+  "fields": {
+    "name": "Efacec",
+    "logo": "company_logos/15156d4a-2e1a-47a8-94cd-41c7a0efbe1e.jpg_Efacec_NuRGeDj.jpg",
+    "about": "The EFACEC Power Solutions is the largest Portuguese corporation in the field of energy, engineering and mobility, with many subsidiaries of strong presence in different international markets. Efacec group is the worldwide leader in the fast-charging infrastructure market for electric vehicles."
+  }
+},
+{
+  "model": "company.company",
+  "pk": 4,
+  "fields": {
+    "name": "EVga",
+    "logo": "company_logos/affac0d94c12222d850c13ce8c9d9b7b.w1000.h1000_hB5O8o2.jpg",
+    "about": "EVGA Corporation is an American computer hardware company that produces Nvidia-GPU-based video cards as well as Intel-chipset-based motherboards. Since 2010, the company has begun adding other computer components to its portfolio, including gaming laptops, power supplies, computer cases and gaming mice. Founded in July 1999, its headquarters is in Brea, California."
+  }
+},
+{
+  "model": "company.company",
+  "pk": 5,
+  "fields": {
+    "name": "EVgo",
+    "logo": "company_logos/eVgo_LogoTM1_m5vcHx4.jpg",
+    "about": "EVgo is the nation\u2019s largest and most reliable public electric vehicle fast charging network. With more than 1,200 DC fast chargers in 66 metropolitan markets, EVgo fast charges more drivers, more miles than any public charging network."
+  }
+},
+{
+  "model": "company.company",
+  "pk": 6,
+  "fields": {
+    "name": "Shell",
+    "logo": "company_logos/shell.png",
+    "about": "Shell Oil Company is the United States-based wholly owned subsidiary of Royal Dutch Shell, transnational corporation \"oil major\" of Anglo-Dutch origins, which is amongst the largest oil companies in the world. Approximately 80,000 Shell employees are based in the U.S. The U.S. headquarters are in Houston, Texas. The current president is Bruce Culpepper, a graduate of the University of Alabama. Shell Oil Company, including its consolidated companies and its share in equity companies, is one of America's largest oil and natural gas producers, natural gas marketers, gasoline marketers and petrochemical manufacturers."
+  }
+},
+{
+  "model": "company.company",
+  "pk": 7,
+  "fields": {
+    "name": "Jet Charge",
+    "logo": "company_logos/JCmulti.png",
+    "about": "Offering nationwide coverage, our specialist ensures you get the safest EV Charging solution at market leading value. We make charging your EV easy!"
+  }
+}
+]

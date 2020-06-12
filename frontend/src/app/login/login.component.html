@@ -1,0 +1,90 @@
+<div class="component">
+    <div class="auth-box">
+        <mat-tab-group class="mx-auto">
+
+            <mat-tab label="Login">
+                <div class="content-box">
+                    <h2>Login</h2>
+                    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                        <!-- Username -->
+                        <div class="form-group">
+                            <input type="text" formControlName="username" class="form-control" placeholder="Username*" [ngClass]="{ 'is-invalid': submitLogin && login.username.errors }" />
+                            <div *ngIf="submitLogin && login.username.errors" class="invalid-feedback">
+                                <div *ngIf="login.username.errors.required">Username is required</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Password -->
+                        <div class="form-group">
+                            <input type="password" formControlName="password" class="form-control" placeholder="Password*" [ngClass]="{ 'is-invalid': submitLogin && login.password.errors }" />
+                            <div *ngIf="submitLogin && login.password.errors" class="invalid-feedback">
+                                <div *ngIf="login.password.errors.required">Password is required</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit -->
+                        <div class="form-group">
+                            <button [disabled]="loading" class="btn btn-info">Login</button>
+                            <img *ngIf="loading" class="pl-3" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                        </div>
+                    </form>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Register">
+                <div class="content-box">
+                    <h2>Register</h2>
+                    <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+
+                        <!-- First name -->
+                        <div class="form-group">
+                            <input type="text" formControlName="first" class="form-control" placeholder="First name" [ngClass]="{ 'is-invalid': submitRegister && register.first.errors }" />
+                            <div *ngIf="submitRegister && register.first.errors" class="invalid-feedback">
+                                <div *ngIf="register.first.errors.required">First name is required</div>
+                            </div>
+                        </div>
+
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <input type="text" formControlName="last" class="form-control" placeholder="Last name" [ngClass]="{ 'is-invalid': submitRegister && register.last.errors }" />
+                            <div *ngIf="submitRegister && register.last.errors" class="invalid-feedback">
+                                <div *ngIf="register.last.errors.required">Last name is required</div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <label for=""></label>
+                        <div class="form-group">
+                            <input type="text" formControlName="email" class="form-control" placeholder="Email" [ngClass]="{ 'is-invalid': submitRegister && register.email.errors }" />
+                            <div *ngIf="submitRegister && register.email.errors" class="invalid-feedback">
+                                <div *ngIf="register.email.errors.required">Email is required</div>
+                            </div>
+                        </div>
+
+                        <!-- Username -->
+                        <div class="form-group">
+                            <input type="text" formControlName="username" class="form-control" placeholder="Username" [ngClass]="{ 'is-invalid': submitRegister && register.username.errors }" />
+                            <div *ngIf="submitRegister && register.username.errors" class="invalid-feedback">
+                                <div *ngIf="register.username.errors.required">Username is required</div>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <input minlength="8" type="password" formControlName="password" class="form-control" placeholder="Password" [ngClass]="{ 'is-invalid': submitRegister && register.password.errors }" />
+                            <div *ngIf="submitRegister && register.password.errors" class="invalid-feedback">
+                                <div *ngIf="register.username.errors.required">Password is required</div>
+                                <div *ngIf="register.password.errors.minlength">Password must have at least 8 characters.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit -->
+                        <button [disabled]="loading" class="btn btn-info">Register</button>
+                        <img *ngIf="loading" class="pl-3" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                    </form>
+                </div>
+            </mat-tab>
+
+        </mat-tab-group>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="igx-typography container my-4 mx-auto section-wrapper">
+  <h3 class="text-info text-center">Browse the nearest or favourite station. Book a spot</h3>
+  <div class="py-4 mx-auto text-white">
+    <p class="no-margin h4">Search for the place you want to charge your car at with the box below. We also give you a list of local stations as well, so you can choose the fittest for your needs.</p>
+    <p class="no-margin text-right h6">- Estel team</p>
+  </div>
+  
+  <!--Search for stations-->
+  <div class="input-group mb-3">
+    <input matInput
+           matValidateAddress
+           matGoogleMapsAutocomplete
+           placeholder="Search location"
+           class="form-control"
+           (onLocationSelected)="onLocationSelected($event)">
+    <div class="input-group-append">
+      <a class="btn btn-outline-info text-white" type="button" >Search stations</a>
+    </div>
+  </div>
+  
+  <!--Stations list-->
+  <div class="row">
+    <div class="column business-list overflow-auto">
+      <div *ngFor="let s of stations" class="business-card clearfix d-flex">
+        <img class="business-image inline" alt='logo' [src]="s.company.logo"/>
+        <div class="business-intel inline my-4 px-2">
+          <h6 class="inline"><i class="material-icons">location_on</i>
+            {{ s.location.address }}
+          </h6><span class="mx-2" [ngClass]="getBadgeClass(s)" >{{ s.available_spots }}/{{ s.total_spots }} spots left</span>
+
+          <div class="pl-3" style="display: block !important;">
+            <small><i class="align-middle mr-1 material-icons">business</i>from {{ s.company.name }}</small><br>
+            <small><i class="align-middle mr-1 material-icons">public</i>{{ s.location.region }}, {{ s.location.country }}</small><br>
+          </div>
+          <div>
+            <a type="button" class="btn btn-outline-info float-right"
+                    (click)="recenterMap(s.location.latitude, s.location.longitude)">Show station
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Google map-->
+    <div class="column">
+      <agm-map style="height: 600px; width: 550px;"
+               [latitude]="centerLatitude"
+               [longitude]="centerLongitude"
+               [usePanning]="true"
+               [zoom]="2"
+               fullscreenControl="true">
+        <agm-marker-cluster imagePath="https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclustererplus/images/m">
+          <agm-marker *ngFor="let s of stations"
+                      [latitude]="s.location.latitude"
+                      [longitude]="s.location.longitude"></agm-marker>
+        </agm-marker-cluster>
+      </agm-map>
+    </div>
+  </div>
+</div>

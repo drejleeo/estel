@@ -1,0 +1,72 @@
+<form [formGroup]="reservForm" class="center text-white w-50 my-5" (ngSubmit)="onFormSubmit(reservForm.value)">
+
+  <fieldset class="form-group">
+    <legend class="h2 border-bottom mb-4 align-center">Add reservation</legend>
+
+    <!-- Parking spot -->
+    <div class="form-group">
+      <label for="parking">Station: </label>
+
+      <ng-select [items]="availableParkings"
+        placeholder="Select a charging station"
+        bindValue="id"
+        groupBy="location.region"
+        bindLabel="location.address"
+        [multiple]="false"
+        [searchFn]="searchf"
+        [selectOnTab]="true"
+        formControlName="parking"
+      >
+        <ng-template ng-optgroup-tmp let-item="item">
+          {{ getRegion(item) }}
+        </ng-template>
+        <ng-template ng-option-tmp let-item="item">
+          {{ item.location.address }},
+          <span class="badge badge-light bg-primary"> from {{ item.company.name }}</span>
+          <span [ngClass]="getBadgeClass(item)" class="float-right">{{ item.available_spots }} left</span>
+        </ng-template>
+        
+      </ng-select>
+    </div>
+
+    <!-- Date and time pickers -->
+    <div class="input-group date" data-provide="datepicker">
+      <label for="start-date">*Date:</label>
+
+      <mat-datepicker></mat-datepicker>
+
+      <input [matDatepicker] = "picker" placeholder = "Choose a date">
+      <mat-datepicker-toggle matSuffix [for] = "picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    
+      <!-- <div>
+        <input formControlName="start_date" type="text" class="form-control">
+      </div> -->
+      <h6>Try this: 2020-06-13T14:22:08.745Z</h6>
+    </div>
+
+    <!-- Regime -->
+    <div class="form-group">
+      <label for="regime">* Regime:</label>
+      <select formControlName="regime" name="regime" aria-placeholder="Choose a regime">
+        <option value="2">Normal(2h)</option>
+        <option value="1">Fast charge(1h)</option>
+      </select>
+    </div>
+
+    <!-- Description -->
+    <form-field class="form-group">
+      <label for="description">Description (optional): </label>
+      <textarea formControlName="description" id="description" type="text" class="form-control text-white" placeholder="Add a description to inform us about something if needed"></textarea>
+    </form-field>
+    
+    <!-- Submit button -->
+    <div class="form-group">
+      <b>Notice: * fields are required.</b>
+    </div>
+    <span class="mx-auto">
+      <button class="btn btn-outline-info mx-auto" type="submit">Post</button>
+    </span>
+  </fieldset>
+
+</form>

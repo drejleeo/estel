@@ -1,0 +1,72 @@
+<!-- App content -->
+<div>
+  <img src="https://content.fortune.com/wp-content/uploads/2019/08/tesla-charging-stations-e1565641059981.jpg"
+       class="head-image position-absolute" alt="">
+  <div class="section-wrapper mx-auto text-center position-relative">
+
+  <!-- Title -->
+  <h3 class="text-white igx-typography pt-5" style="font-size: 34px;">These are your reservations</h3>
+  
+  <!--Add reservation button-->
+  <a mat-raised-button class="float-right radius" routerLink="/reservations/add"><i class="material-icons">create</i>Add new</a>
+  
+   <!--Filter field ** not working-->
+  <mat-form-field class="float-left" color="primary">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+
+  <!-- Actual table ¯\_(ツ)_/¯ -->
+  <table mat-table [dataSource]="dataSource" matSort style="border-radius: 10%" class="mat-elevation-z8">
+    
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element; let i=index"> {{ i + 1 }} </td>
+    </ng-container>
+    
+    <!-- Address -->
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Address </th>
+      <td mat-cell *matCellDef="let element"> {{ element.parking.address }} </td>
+    </ng-container>
+    
+    <!-- Spot -->
+    <ng-container matColumnDef="spot">
+      <th mat-header-cell *matHeaderCellDef> Spot </th>
+      <td mat-cell *matCellDef="let element"> {{ element.spot }} </td>
+    </ng-container>
+    
+    <!-- Start date -->
+    <ng-container matColumnDef="start_date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Start date </th>
+      <td mat-cell *matCellDef="let element"> {{ element.start_date | timeago }} </td>
+    </ng-container>
+    
+    <!-- Duration -->
+    <ng-container matColumnDef="duration">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Duration </th>
+      <td mat-cell *matCellDef="let element"> {{ element.regime }} hours </td>
+    </ng-container>
+    
+    <!-- Company -->
+    <ng-container matColumnDef="company">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Company </th>
+      <td mat-cell *matCellDef="let element"> {{ element.parking.company }} </td>
+    </ng-container>
+    
+    <!-- Creation date -->
+    <ng-container matColumnDef="created_on">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Creation </th>
+      <td mat-cell *matCellDef="let element"> {{ element.created_on | timeago }} </td>
+    </ng-container>
+    
+    <!-- Table setup -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    
+  </table>
+  
+  <!-- Paginator -->
+  <mat-paginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator>
+
+</div>

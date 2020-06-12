@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg set-colors text-info igx-typography">
+
+  <div class="container-fluid navbar-nav">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand text-white" routerLink='/'>Estel</a>
+
+    <!-- Login button if not logged -->
+    <a class="nav-item nav-link text-white" style="cursor: pointer" routerLink="/login" *ngIf="!currentUser">Login</a>
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" routerLink="/login" data-targe2t="#exampleModalCenter" *ngIf="!currentUser">Login</button>-->
+    
+    <!-- Collapsed Tabs Section -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03" *ngIf="currentUser">
+
+      <!-- Navigation bar ul -->
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <!-- Companies Tab -->
+        <li class="nav-item">
+          <a class="nav-item nav-link text-info" routerLink="/companies">Companies</a>
+        </li>
+
+        <!-- Stations Tab -->
+        <li class="nav-item active">
+          <a class="nav-item nav-link text-info" routerLink="/stations">Stations</a>
+        </li>
+
+        <!-- Reservations Tab -->
+        <li class="nav-item">
+          <a class="nav-item nav-link text-info" routerLink="/reservations">Reservations</a>
+        </li>
+        
+        <!-- Contact Tab -->
+        <li class="nav-item">
+          <a class="nav-item nav-link text-info" routerLink="/contact">Contact</a>
+        </li>
+        
+      </ul>
+
+      <!-- Search field -->
+      <form class="form-inline md-form form-sm active-cyan-2">
+        <mdb-icon fas class="mr-1" icon="search" aria-hidden="true"></mdb-icon>
+        <input class="form-control-sm w-75 bd-bottom" type="text" placeholder="Search" aria-label="Search"
+          mdbInput>
+      </form>
+
+      <!-- Account Section -->
+      <div class="dropdown no-decoration nav-item vertical-align" style="cursor: pointer" *ngIf="currentUser">
+        <a class="nav-item dropdown-toggle" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+           aria-expanded="false">
+          <i class="material-icons mr-1 align-middle">account_circle</i>
+          <span class="align-middle">Account</span>
+        </a>
+        <!-- Account Dropdown -->
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" (click)="logout()" *ngIf="currentUser">Logout</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</nav>
+

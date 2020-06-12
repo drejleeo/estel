@@ -1,0 +1,114 @@
+[
+{
+  "model": "country.country",
+  "pk": 1,
+  "fields": {
+    "code": "US",
+    "name": "United States"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 2,
+  "fields": {
+    "code": "GR",
+    "name": "Greece"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 3,
+  "fields": {
+    "code": "RO",
+    "name": "Romania"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 4,
+  "fields": {
+    "code": "GR",
+    "name": "Germany"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 5,
+  "fields": {
+    "code": "FR",
+    "name": "France"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 6,
+  "fields": {
+    "code": "ES",
+    "name": "Spain"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 7,
+  "fields": {
+    "code": "IT",
+    "name": "Italy"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 8,
+  "fields": {
+    "code": "UK",
+    "name": "United Kingdom"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 9,
+  "fields": {
+    "code": "BR",
+    "name": "Brazil"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 10,
+  "fields": {
+    "code": "RU",
+    "name": "Russia"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 11,
+  "fields": {
+    "code": "JP",
+    "name": "Japan"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 12,
+  "fields": {
+    "code": "CHN",
+    "name": "China"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 13,
+  "fields": {
+    "code": "NZ",
+    "name": "New Zealand"
+  }
+},
+{
+  "model": "country.country",
+  "pk": 14,
+  "fields": {
+    "code": "AU",
+    "name": "Australia"
+  }
+}
+]

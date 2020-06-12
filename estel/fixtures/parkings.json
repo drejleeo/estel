@@ -1,0 +1,79 @@
+[
+{
+  "model": "parking.parking",
+  "pk": 1,
+  "fields": {
+    "company": 1,
+    "region": 1,
+    "address": "280 Formula Lane",
+    "total_spots": 12,
+    "coordinates": "30.2550042,-81.7877752"
+  }
+},
+{
+  "model": "parking.parking",
+  "pk": 2,
+  "fields": {
+    "company": 2,
+    "region": 2,
+    "address": "7180 10th St N, Oakdale",
+    "total_spots": 12,
+    "coordinates": "44.9648707,-92.96127030000002"
+  }
+},
+{
+  "model": "parking.parking",
+  "pk": 3,
+  "fields": {
+    "company": 7,
+    "region": 3,
+    "address": "69 Illawarra Rd",
+    "total_spots": 3,
+    "coordinates": "-33.90433106121057,151.16191864013672"
+  }
+},
+{
+  "model": "parking.parking",
+  "pk": 36,
+  "fields": {
+    "company": 3,
+    "region": 4,
+    "address": "Kondrat'yevskiy Prospekt, 62",
+    "total_spots": 14,
+    "coordinates": "59.98000126622058,30.394836759179725"
+  }
+},
+{
+  "model": "parking.parking",
+  "pk": 37,
+  "fields": {
+    "company": 5,
+    "region": 5,
+    "address": "7 Chome-3-1 Hongo",
+    "total_spots": 25,
+    "coordinates": "35.708607653285554,139.76119995117188"
+  }
+},
+{
+  "model": "parking.parking",
+  "pk": 38,
+  "fields": {
+    "company": 6,
+    "region": 7,
+    "address": "131 Quai de Valmy",
+    "total_spots": 5,
+    "coordinates": "48.876457644366816,2.3641204833984375"
+  }
+},
+{
+  "model": "parking.parking",
+  "pk": 39,
+  "fields": {
+    "company": 7,
+    "region": 8,
+    "address": "23 Boulevard de Suisse",
+    "total_spots": 5,
+    "coordinates": "43.73854162585801,7.422942101574677"
+  }
+}
+]

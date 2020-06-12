@@ -1,0 +1,14 @@
+# pycaches, db, secrets, env, static, media
+**/__pycache__/
+estel/config/db.sqlite3
+.idea
+estel/config/secrets.py
+env/
+static/
+media/
+
+# ignore node_modules
+frontend/node_modules/
+
+# system generated files
+.DS_Store

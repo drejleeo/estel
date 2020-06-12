@@ -1,0 +1,762 @@
+[
+{
+  "model": "parking.spot",
+  "pk": 1,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 2,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 3,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 4,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 4
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 5,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 5
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 6,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 6
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 7,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 7
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 8,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 8
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 9,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 9
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 10,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 10
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 11,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 11
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 12,
+  "fields": {
+    "active": true,
+    "parking": 1,
+    "status": 0,
+    "order_number": 12
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 13,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 14,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 15,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 16,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 4
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 17,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 5
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 18,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 6
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 19,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 7
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 20,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 8
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 21,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 9
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 22,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 10
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 23,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 11
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 24,
+  "fields": {
+    "active": true,
+    "parking": 2,
+    "status": 0,
+    "order_number": 12
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 25,
+  "fields": {
+    "active": true,
+    "parking": 3,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 26,
+  "fields": {
+    "active": true,
+    "parking": 3,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 27,
+  "fields": {
+    "active": true,
+    "parking": 3,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 58,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 59,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 60,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 61,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 4
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 62,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 5
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 63,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 6
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 64,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 7
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 65,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 8
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 66,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 9
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 67,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 10
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 68,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 11
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 69,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 12
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 70,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 13
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 71,
+  "fields": {
+    "active": true,
+    "parking": 36,
+    "status": 0,
+    "order_number": 14
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 72,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 73,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 74,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 75,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 4
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 76,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 5
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 77,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 6
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 78,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 7
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 79,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 8
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 80,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 9
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 81,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 10
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 82,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 11
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 83,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 12
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 84,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 13
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 85,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 14
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 86,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 15
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 87,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 16
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 88,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 17
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 89,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 18
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 90,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 19
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 91,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 20
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 92,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 21
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 93,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 22
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 94,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 23
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 95,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 24
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 96,
+  "fields": {
+    "active": true,
+    "parking": 37,
+    "status": 0,
+    "order_number": 25
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 97,
+  "fields": {
+    "active": true,
+    "parking": 38,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 98,
+  "fields": {
+    "active": true,
+    "parking": 38,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 99,
+  "fields": {
+    "active": true,
+    "parking": 38,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 100,
+  "fields": {
+    "active": true,
+    "parking": 38,
+    "status": 0,
+    "order_number": 4
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 101,
+  "fields": {
+    "active": true,
+    "parking": 38,
+    "status": 0,
+    "order_number": 5
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 102,
+  "fields": {
+    "active": true,
+    "parking": 39,
+    "status": 0,
+    "order_number": 1
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 103,
+  "fields": {
+    "active": true,
+    "parking": 39,
+    "status": 0,
+    "order_number": 2
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 104,
+  "fields": {
+    "active": true,
+    "parking": 39,
+    "status": 0,
+    "order_number": 3
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 105,
+  "fields": {
+    "active": true,
+    "parking": 39,
+    "status": 0,
+    "order_number": 4
+  }
+},
+{
+  "model": "parking.spot",
+  "pk": 106,
+  "fields": {
+    "active": true,
+    "parking": 39,
+    "status": 0,
+    "order_number": 5
+  }
+}
+]

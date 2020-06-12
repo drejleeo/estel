@@ -1,0 +1,37 @@
+<div class="customize">
+    <div class="igx-typography__h1 text-center w-75 mx-auto placard">
+        <h1 class="m-3 text-info">Our partners</h1>
+        <p class="h5 descr">You own a business? Do you want to manage your company faster and easier? Contact us so we can help you register and promote your business. Below we present our parteners.</p>
+    </div>
+    
+    <div *ngIf="companies" class="my-4 mx-auto w-75 row">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4" *ngFor="let comp of companies">
+              
+                <igx-card class="igx-typography my-3 dark-theme card-wrapper">
+                    <igx-card-media class="set-dimensions logo d-flex align-content-center px-3 pt-3">
+                        <img [ngClass]="{'height': height, 'width': width}" [src]="comp.logo" alt="">
+                    </igx-card-media>
+                    
+                    <igx-card-header>
+                        <h3 igxCardHeaderTitle>{{ comp.name }}</h3>
+                    </igx-card-header>
+                  
+                    <igx-card-content>
+                        <p>{{ truncate(comp.about) }}</p>
+                    </igx-card-content>
+                  
+                    <igx-card-actions>
+                        <button igxButton igxRipple *ngFor="let button of buttons"
+                            routerLink='/companies/{{ comp.id }}'>{{ button }}
+                        </button>
+                        <!--<button igxButton="icon"-->
+                        <!--    igxRipple-->
+                        <!--    igxRippleCentered="true"-->
+                        <!--    *ngFor="let icon of card.icons">-->
+                        <!--    <igx-icon>{{icon}}</igx-icon>-->
+                        <!--</button>-->
+                    </igx-card-actions>
+                </igx-card>
+            </div>
+        </div>
+</div>

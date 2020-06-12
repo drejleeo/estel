@@ -1,0 +1,50 @@
+<app-slideshow></app-slideshow>
+
+<div class="home-view container mx-auto text-white">
+    <div class="suggestCompanies text-center mx-auto">
+
+        <h2>Welcome to Estel, please take a tour!</h2>
+        <div class="py-3">
+            <p>
+                Estel is a helpful virtual assistant, available for everyone. This app targets electric cars and tries to ease the management of charging spots for them. The more registered companies, the better for the owners.
+                For a long time, electric vehicles were not considered the best option for traveling due to its shortages for those times. Now, with charging stations being developped all over the earth, people started to opt for EVs. This way, we can make a revolutionary change and switch to a greener solution.
+            </p>
+        </div>
+
+        <h3 class="py-3">Registered businesses from around the world:</h3>
+
+        <!-- For grid-like view -->
+
+        <div *ngIf="suggestedCompanies" class="my-4">
+            <div class="row" *ngFor="let row of [0, 1]">
+                <a routerLink='/companies/{{ comp.id }}'
+                *ngFor="let comp of suggestedCompanies.slice(row * 3, row * 3 + 3)"
+                class="no-decoration col-sm-4 col-xs-1 py-3"
+                >
+                    <igx-card class="igx-typography dark-theme">
+                        <igx-card-media>
+                          <div class="set-dimensions">
+                            <img [src]="comp.logo" class="logo px-3 pt-3">
+                          </div>
+                        </igx-card-media>
+                        <igx-card-header>
+                            <h4 igxCardHeaderTitle>{{ comp.name }}</h4>
+                        </igx-card-header>
+                    </igx-card>
+                </a>
+                
+            </div>
+        </div>
+
+        <h2 class="py-3">Not convinced yet to switch to electric?</h2>
+        <p>
+            Over the last decade, there’s been an increase in the purchasing of electric vehicles (EV).
+            There are many reasons why one might consider making the switch to an EV – electric cars are higher efficiency than gas-powered cars, can reduce your dependence on fossil fuels and require less maintenance than most cars, to name three popular reasons.
+            One draw for many people who decide to buy an electric car is that EVs are often considered to be one of the most sustainable forms of transportation. 
+            Unlike hybrid vehicles or gas-powered cars, EVs run solely on electric power – depending on how that electric power is produced, your EV can be run 100% on sustainable, renewable resources. 
+            There are four factors to consider when evaluating the impact of electric cars on the environment: tailpipe emissions, well-to-wheel emissions, the energy source that charges the battery, and the car’s efficiency.
+        </p>
+        <img class="py-3" src="../../assets/images/13-benefits-of-driving-ev.png" alt="ev_benefits">
+
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.wrapper {
+    min-height: 100vh;
+    padding-bottom: 175px;
+    position: relative;
+}
+
+.backimage {
+    /* background-image: url('https://homebuyingchecklist.co/wp-content/uploads/2017/10/Parking-lot-security-cameras.jpg'); */
+    background-size: cover;
+    background-position: center center;
+}

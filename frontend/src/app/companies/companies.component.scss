@@ -1,0 +1,41 @@
+@import '~igniteui-angular/lib/core/styles/themes/index';
+@include igx-theme($default-palette);
+
+.dark-theme {
+    background: #333;
+    color: #fff;
+    @include igx-dark-theme($green-palette);
+}
+
+.card-wrapper {
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.set-dimensions {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  align-content: center;
+}
+
+.logo {
+  min-width: 312px;
+  height: auto;
+  object-fit: contain;
+}
+
+.customize {
+  height: 93vh;
+  background-image: url("https://s3.envato.com/files/221360354/1.jpg");
+  background-repeat: no-repeat;
+  overflow: auto !important;
+}
+
+.placard {
+  padding: 100px;
+}
+
+.descr {
+  color: #24232a !important;
+}

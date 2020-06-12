@@ -1,0 +1,24 @@
+.set-colors {
+    background-color: #1c2938;
+    border-bottom: 1px solid #0d1218;
+}
+
+.under-navbar-colors {
+    background-color: #141f2a;
+}
+
+.active-cyan-2 input[type=search]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+input::-webkit-input-placeholder {
+    direction: rtl;
+    text-align: left;
+}
+
+.bd-bottom {
+  all: unset;
+  border-bottom: 2px !important;
+  border-color: #17a2b8;
+}

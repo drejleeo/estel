@@ -17,6 +17,7 @@ import { MatGoogleMapsAutocompleteModule } from '@angular-material-extensions/go
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material';
 import { TimeagoModule } from 'ngx-timeago';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TimeagoModule } from 'ngx-timeago';
     AppRoutingModule,
 
     // Timeago
+    NgbModule,
     TimeagoModule.forRoot(),
 
     // Google maps

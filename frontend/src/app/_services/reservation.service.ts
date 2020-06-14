@@ -27,10 +27,7 @@ export class ReservationService {
   }
 
   addReservation(reserv): Observable<ReservationFull> {
-    return this.http.post<ReservationFull>(this.myReservUrl, JSON.stringify(reserv), httpOptions)
-    .pipe(
-      retry(1),
-    );
+    return this.http.post<ReservationFull>(this.myReservUrl, JSON.stringify(reserv), httpOptions);
   }
 
 }

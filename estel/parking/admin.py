@@ -5,7 +5,7 @@ from .models import Parking, Spot
 @admin.register(Spot)
 class SpotAdmin(admin.ModelAdmin):
     model = Spot
-    fields = ['active', 'status', ]
+    fields = ['active', 'status', 'parking', 'order_number']
     readonly_fields = ['parking', 'order_number', ]
     extra = 0
 

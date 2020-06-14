@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --poll 1000 --disableHostCheck",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -30,6 +30,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@mat-datetimepicker/core": "^2.0.1",
     "@mat-datetimepicker/moment": "^2.0.1",
+    "@ng-bootstrap/ng-bootstrap": "^5.3.1",
     "@ng-select/ng-select": "^3.0.3",
     "@types/googlemaps": "^3.37.4",
     "@types/hammerjs": "^2.0.36",

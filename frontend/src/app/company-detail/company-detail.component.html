@@ -1,4 +1,12 @@
-<div class="container" style="background-color: #d4d4d4; height: 100%;">
-    <h1>{{ company.name }}</h1>
+<div class="container company-detail">
+    <div [ngStyle]="{'background-image': 'url(' + company.cover + ')', 'background-size': 'cover'}"
+        class="cover">
+        <div class="logo-and-name">
+            <div [ngStyle]="{'background-image': 'url(' + company.logo + ')', 'background-size': 'cover'}"
+                class="logo">
+            </div>
+            <h1 class="name">{{ company.name }}</h1>
+        </div>
+    </div>
     <p>{{ company.about }}</p>
 </div>

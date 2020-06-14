@@ -1,13 +1,14 @@
 from django.db import models
 from django.template.defaultfilters import truncatechars
 from django.utils.safestring import mark_safe
+from tinymce.models import HTMLField
 
 
 class Company(models.Model):
     name = models.CharField(max_length=100)
     logo = models.ImageField(upload_to='company_logos', null=True)
     cover = models.ImageField(upload_to='company_cover', null=True)
-    about = models.TextField(blank=True)
+    about = HTMLField(blank=True)
 
     class Meta:
         verbose_name = 'Company'

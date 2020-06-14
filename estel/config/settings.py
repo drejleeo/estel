@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_auth',
     'corsheaders',
     'rest_registration',
+    'tinymce',
 
     'estel.accounts',
     'estel.company',

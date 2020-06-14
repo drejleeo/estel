@@ -23,7 +23,6 @@ export class NgbTimeStringAdapter extends NgbTimeAdapter<string> {
     };
   }
 
-
   toModel(time: NgbTimeStruct | null): string | null {
     return time != null ? `${pad(time.hour)}:${pad(time.minute)}:${pad(time.second)}` : null;
   }
@@ -100,7 +99,7 @@ export class ReservationCreateComponent implements OnInit {
   }
 
   onFormSubmit(formData: NgForm) {
-    formData.start_date = `${this.date}T${this.time}.000Z`;
+    this.reservForm.setValue({start_date: `${this.date}T${this.time}.000Z`})
     this.isLoadingResults = true;
     this.resService.addReservation(formData).subscribe(
       res => {

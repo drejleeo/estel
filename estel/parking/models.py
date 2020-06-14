@@ -8,7 +8,7 @@ class Parking(models.Model):
     company = models.ForeignKey(Company, related_name='parkings', on_delete=models.CASCADE, null=True)
     region = models.ForeignKey(Region, related_name='parkings', on_delete=models.CASCADE, null=True)
     address = models.CharField(max_length=255, unique=True, null=False)
-    total_spots = models.PositiveSmallIntegerField(null=True) # To be modified to Integer field
+    total_spots = models.IntegerField(null=True)
     coordinates = GeopositionField('GPS Coordinates', default='0.0,0.0')
 
     @property
@@ -45,8 +45,7 @@ class Spot(models.Model):
     active = models.BooleanField(default=True)
     parking = models.ForeignKey(Parking, related_name='spots', verbose_name='Parking', on_delete=models.CASCADE)
     status = models.IntegerField(choices=STATUS, default=AVAILABLE)
-    order_number = models.PositiveSmallIntegerField(null=True) # To be modified to Integer field
+    order_number = models.IntegerField(null=True)
 
     def __str__(self):
         return f'No. {self.order_number} of {self.parking.address}'
-

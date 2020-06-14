@@ -5,7 +5,8 @@ from django.utils.safestring import mark_safe
 
 class Company(models.Model):
     name = models.CharField(max_length=100)
-    logo = models.ImageField(upload_to='company_logos')
+    logo = models.ImageField(upload_to='company_logos', null=True)
+    cover = models.ImageField(upload_to='company_cover', null=True)
     about = models.TextField(blank=True)
 
     class Meta:
@@ -22,7 +23,12 @@ class Company(models.Model):
     def short_about(self):
         return truncatechars(self.about, 100)
 
-    def image_tag(self):
+    def logo_tag(self):
         return mark_safe(f'<img src="/media/{self.logo}" width="150" height="150" />')
-    image_tag.short_description = 'Logo'
-    image_tag.allow_tags = True
+    logo_tag.short_description = 'Logo'
+    logo_tag.allow_tags = True
+
+    def cover_tag(self):
+        return mark_safe(f'<img src="/media/{self.cover}" height="150" />')
+    cover_tag.short_description = 'Cover'
+    cover_tag.allow_tags = True

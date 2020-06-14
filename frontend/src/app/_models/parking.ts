@@ -11,5 +11,5 @@ export class Parking {
     location: Location;
     total_spots: number;
     available_spots: number;
-    isFull: boolean;
+    is_full: boolean;
 }

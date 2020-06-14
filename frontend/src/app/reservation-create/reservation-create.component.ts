@@ -35,11 +35,17 @@ export class ReservationCreateComponent implements OnInit {
       regime: ['', Validators.required],
     });
 
-    this.parkingServ.getParkings({is_full: true})
+    this.parkingServ.getParkings()
       .subscribe(
         res => {
-          console.log(res);
+          // Filter results so that we get only available parkings
           this.availableParkings = res.results;
+          for(let i=0; i<this.availableParkings.length; i++) {
+            console.log(this.availableParkings[i].is_full);
+            if (this.availableParkings[i].is_full) {
+              this.availableParkings.splice(i, 1);
+            }
+          }
           console.log(this.availableParkings);
         }
       );
@@ -61,9 +67,13 @@ export class ReservationCreateComponent implements OnInit {
   }
 
   searchf(term: string, item: any) {
-    term = term.toLocaleLowerCase();
-    return (item.location.country.toLocaleLowerCase().indexOf(term) || item.location.region.toLocaleLowerCase().indexOf(term)) > -1 ||
-     (item.location.country.toLocaleLowerCase().includes(term) || item.location.region.toLocaleLowerCase().includes(term));
+    term = term.toLowerCase();
+    return !item.is_full && (
+      item.location.country.toLowerCase().indexOf(term) > -1 ||
+      item.location.region.toLowerCase().indexOf(term) > -1 ||
+      item.location.country.toLowerCase().includes(term) ||
+      item.location.region.toLowerCase().includes(term)
+    );
   }
 
   getRegion(item: any) {

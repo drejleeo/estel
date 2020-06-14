@@ -2,7 +2,8 @@ from django.contrib import admin
 from .models import Parking, Spot
 
 
-class SpotAdmin(admin.TabularInline):
+@admin.register(Spot)
+class SpotAdmin(admin.ModelAdmin):
     model = Spot
     fields = ['active', 'status', ]
     readonly_fields = ['parking', 'order_number', ]
@@ -18,4 +19,3 @@ class SpotAdmin(admin.TabularInline):
 class ParkingAdmin(admin.ModelAdmin):
     model = Parking
     list_display = ('__str__', 'company', 'total_spots', 'available_spots', 'coordinates')
-    inlines = [SpotAdmin, ]

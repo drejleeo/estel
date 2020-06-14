@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
 from estel.reservation.models import Reservation
 from estel.parking.models import Spot
+import datetime
 
 
 class Command(BaseCommand):
@@ -13,8 +14,12 @@ class Command(BaseCommand):
             if reservation.is_over:
                 sspot.status = Spot.AVAILABLE
                 changed = True
-            if reservation.is_happening:
+            elif reservation.is_happening:
                 sspot.status = Spot.TAKEN
                 changed = True
             if changed:
                 sspot.save()
+                self.stdout.write(self.style.SUCCESS(
+                    f'{datetime.datetime.now()}: Updated status on spot {sspot.id} from parking {sspot.parking}'
+                ))
+        self.stdout.write('=============================================================')

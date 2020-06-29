@@ -65,7 +65,11 @@ export class ReservationCreateComponent implements OnInit {
   reservForm: FormGroup;
   isLoadingResults = true;
   availableParkings: Parking[];
-  date: '0000-00-00';
+  date: {
+    day: string,
+    month: string,
+    year: string
+  };
   time = '00:00:00';
 
   constructor(
@@ -99,7 +103,7 @@ export class ReservationCreateComponent implements OnInit {
   }
 
   onFormSubmit(formData: NgForm) {
-    this.reservForm.setValue({start_date: `${this.date}T${this.time}.000Z`})
+    this.reservForm.patchValue({start_date: `${this.date.year}-${this.date.month}-${this.date.day}T${this.time}+03:00`});
     this.isLoadingResults = true;
     this.resService.addReservation(formData).subscribe(
       res => {

@@ -5,7 +5,7 @@
   <!-- Date and time pickers -->
   <div><label for="start-date">* Date and time:</label></div>
   <div class="input-group mb-3">
-    <input type="date" class="form-control" placeholder="Pick a date" [(ngModel)]="date" ngbDatepicker #d="ngbDatepicker"/>
+    <input class="form-control" placeholder="Pick a date" [(ngModel)]="date" ngbDatepicker #d="ngbDatepicker"/>
     <div class="input-group-append">
       <button class="btn btn-outline-secondary" (click)="d.toggle()">📅</button>
     </div>

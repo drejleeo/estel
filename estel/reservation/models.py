@@ -37,5 +37,9 @@ class Reservation(models.Model):
         return self.spot.status == Spot.TAKEN and not self.is_happening
 
     @property
+    def just_started(self):
+        return self.spot.status == Spot.AVAILABLE and self.is_happening
+
+    @property
     def is_happening(self):
         return self.start_date <= datetime.now(tz=pytz.timezone(settings.TIME_ZONE)) < self.end_date

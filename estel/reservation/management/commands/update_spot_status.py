@@ -15,7 +15,7 @@ class Command(BaseCommand):
             if reservation.is_over:
                 sspot.status = Spot.AVAILABLE
                 changed = True
-            elif reservation.is_happening:
+            elif reservation.just_started:
                 sspot.status = Spot.TAKEN
                 changed = True
             if changed:

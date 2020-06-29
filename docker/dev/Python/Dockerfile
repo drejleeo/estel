@@ -30,7 +30,7 @@ RUN pip3 install -r ./dev-backend-requirements.txt
 COPY ./cron/ /etc/cron.d/
 
 # Give execution rights on the cron job
-RUN chmod 0644 /etc/cron.d
+RUN chmod 0744 /etc/cron.d/*
 
 # Apply cron job
 RUN crontab /etc/cron.d/*

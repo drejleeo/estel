@@ -34,7 +34,7 @@ class Reservation(models.Model):
 
     @property
     def is_over(self):
-        return self.spot == Spot.TAKEN and not self.is_happening
+        return self.spot.status == Spot.TAKEN and not self.is_happening
 
     @property
     def is_happening(self):

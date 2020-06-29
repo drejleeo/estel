@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 sleep 7
+service cron start
+service cron status
 
 #python3 manage.py shell -c "from django.contrib.auth.models import User;\
 #User.objects.create_superuser('root', 'root@estel.com', 'root')" 2>/dev/null

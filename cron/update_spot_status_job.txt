@@ -1,1 +1,1 @@
-* * * * * /usr/bin/python3 /estel/manage.py update_spot_status > /var/log/estel.log
+* * * * * /usr/bin/python3 /estel/manage.py update_spot_status >> /var/log/estel.log

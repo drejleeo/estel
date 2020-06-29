@@ -8,6 +8,7 @@ class Command(BaseCommand):
     help = 'Command to update parking spots statuses with reservations'
 
     def handle(self, *args, **options):
+        self.stdout.write('============================= Update spots ==============================')
         for reservation in Reservation.objects.all():
             changed = False
             sspot = reservation.spot
@@ -22,4 +23,3 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS(
                     f'{datetime.datetime.now()}: Updated status on spot {sspot.id} from parking {sspot.parking}'
                 ))
-        self.stdout.write('=============================================================')

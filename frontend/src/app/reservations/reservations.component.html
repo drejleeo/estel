@@ -39,7 +39,7 @@
     <!-- Start date -->
     <ng-container matColumnDef="start_date">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Start date </th>
-      <td mat-cell *matCellDef="let element"> {{ element.start_date | timeago }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.start_date | date}} </td>
     </ng-container>
     
     <!-- Duration -->
